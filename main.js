@@ -24,7 +24,7 @@ function isValidEmail(str){
 }
 
 function isValidPassword(str){
-if(str.length >= 8){
+if(str.length >= 8 && str.toUpperCase() && str.toLowerCase()){
     return true
 } else {
         return false
@@ -32,16 +32,18 @@ if(str.length >= 8){
 } 
 
 function isRegisteredUser(str){
-  if(str === str){
+  if(str.indexOf === str){
     return true
-  } else if(str !== str){
+  } else if(str.indexOf !== str){
      return false
   }
 }
 
 function passwordMatches(str){
   if(str === str){
-
+    return true
+  } else{
+      return false
   }
 }
 
