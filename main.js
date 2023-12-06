@@ -13,7 +13,37 @@ const password3 = "supToThis"
 
 // **YOUR** code below. Pass those tests!
 
+function isValidEmail(str){
+  if(str.indexOf(".prsvr@gmail.com") >= 1){
+    return true
+  } else if(str.indexOf("@perseverenow.org") >= 1){
+    return true
+  } else{
+    return false
+  }
+}
 
+function isValidPassword(str){
+if(str.length >= 8){
+    return true
+} else {
+        return false
+    }
+} 
+
+function isRegisteredUser(str){
+  if(str === str){
+    return true
+  } else if(str !== str){
+     return false
+  }
+}
+
+function passwordMatches(str){
+  if(str === str){
+
+  }
+}
 
 // Our code below. Do not touch!
 
