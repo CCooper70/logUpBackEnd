@@ -24,28 +24,35 @@ function isValidEmail(str){
 }
 
 function isValidPassword(str){
-if(str.length >= 8 && str.toUpperCase() && str.toLowerCase()){
+if(str.length >= 8 && 
+  str !== str.toUpperCase() && 
+  str !== str.toLowerCase()){
     return true
-} else {
-        return false
-    }
+} else{
+      return false
 } 
+}
+
 
 function isRegisteredUser(str){
-  if(str.indexOf === str){
-    return true
-  } else if(str.indexOf !== str){
-     return false
-  }
+ if(str === user1 || str === user2 || str === user3){
+  return true
+ }else{
+  return false
+ }
 }
 
-function passwordMatches(str){
-  if(str === str){
+
+function passwordMatches(user, password){
+ if(string1 === user1 && string2 === password1){
+  return true
+ }if(string1 === user2 && string2 === password2){
+  return true
+ }if (string1 === user3 && string2 === password3){
     return true
-  } else{
-      return false
-  }
-}
+ } else {
+  return false
+ }
 
 // Our code below. Do not touch!
 
